@@ -63,6 +63,8 @@ body {
     padding: 10px;
     background: #e9ecef;
     border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
 }
 .work-sec-header label {
     font-weight: bold;
