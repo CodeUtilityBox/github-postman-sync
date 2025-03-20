@@ -90,6 +90,8 @@ body {
     border-radius: 8px;
     background: #eeecec;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    background: #f4f4f4;
 }
 .terminal.active, .config.active {
     display: block;
