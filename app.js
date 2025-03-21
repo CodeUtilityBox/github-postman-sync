@@ -29,9 +29,9 @@ const commandInput = document.getElementById('command-input');
 
 const WELCOME_MESSAGE = 'Welcome to Github Postman Sync Engine! Type "help" for a list of commands.';
 const HELP_MESSAGE = `<p><strong>Available Commands:</strong><br>
-- git pull &lt;branch&gt;: Pull collections and environments from GitHub.<br>
-- git pull hard &lt;branch&gt;: Hard pull collections and environments from GitHub.<br>
-- git push &lt;new-branch&gt; &lt;message&gt;: Push collections and create pull request to GitHub.<br>
+- git pull branch: Pull collections and environments from GitHub.<br>
+- git pull hard branch: Hard pull collections and environments from GitHub.<br>
+- git push new-branch message: Push collections and create pull request to GitHub.<br>
 - help: Show this help message.</p>`;
 
 async function handleGitPull(branchName) {
