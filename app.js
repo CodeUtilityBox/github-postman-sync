@@ -31,8 +31,7 @@ const WELCOME_MESSAGE = 'Welcome to Github Postman Sync Engine! Type "help" for 
 const HELP_MESSAGE = `<p><strong>Available Commands:</strong><br>
 - git pull &lt;branch&gt;: Pull collections and environments from GitHub.<br>
 - git pull hard &lt;branch&gt;: Hard pull collections and environments from GitHub.<br>
-- git push &lt;base-branch&gt; &lt;new-branch&gt; "&lt;message&gt;": Push collections to GitHub.<br>
-- clear: Clear the terminal.<br>
+- git push &lt;new-branch&gt; &lt;message&gt;: Push collections and create pull request to GitHub.<br>
 - help: Show this help message.</p>`;
 
 async function handleGitPull(branchName) {
@@ -93,10 +92,6 @@ async function processCommand(command) {
             const params = command.replace('git push', '').trim();
             displayOutput(`COMMAND >> ` + command, null,  true);
             await handleGitPush(params);
-
-        }
-        else if (command === 'clear') {
-            clearTerminal();
 
         }
         else if (command === 'help') {
